@@ -1,0 +1,163 @@
+body{
+    background-image: url(imagenes/fondo.jpg);
+    margin: 0px;
+    color: white;
+}
+header{
+    text-align: center;
+    background-color: #003a009d;
+}
+h1{
+    margin: 0px;
+    padding: 20px;
+}
+section>div>#Menu{
+    display: flex;
+    justify-content: space-around;
+}
+section>div>#Menu>li{
+    display: flex;
+    background-color: #003a009d;
+    width: 110px;
+    height: 40px;
+    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
+}
+section>div>#Menu>li>a{
+    color: white;
+    text-decoration: none;
+}
+section>div>#Menu>li:hover{
+    background: rgb(202, 202, 202);
+    color: black;
+}
+aside{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+aside>img{
+    width: 600px;
+}
+#niv{
+    display: flex;
+    flex-flow: column;
+}
+#niv>h2{
+    
+    display: flex;
+    justify-content: center;
+}
+#niv p{
+    margin-top: 0px;
+    text-align: center;
+}
+
+#cursos>.menucur{
+    display: flex;
+    justify-content: center;
+}
+#cursos>.menucur>li{
+    display: flex;
+    width: 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#cursos>.menucur>li>a{
+    color: black;
+    background-color: rgba(250, 235, 215, 0);
+    text-decoration: none;
+}
+#cursos>.menucur>li:hover{
+    background: rgb(202, 202, 202);
+    color: black;
+}
+.menucur :nth-child(1){
+    background-color: rgba(204, 255, 21, 0.329);
+    border-radius: 10%;
+}
+.menucur :nth-child(2){
+    background-color: rgba(207, 2, 2, 0.329);
+    border-radius: 10%;
+}
+.menucur :nth-child(3){
+    background-color: rgba(0, 102, 236, 0.329);
+    border-radius: 10%;
+}
+#quien{
+    margin: 2rem;
+    display: flex;
+    flex-flow: row;
+}
+#quien img{
+    width: 25rem;
+    display: flex;
+    justify-content: flex-start;
+}
+#quien div{
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+#ubi{
+    margin-left: 3rem;
+    margin-right: 2.5rem;
+}
+
+
+
+
+
+footer{
+    background-color: #003a009d;
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+}
+.info{
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.imagen{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(4, 21, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;   
+}
+.imagen > img{
+    width: 25px;
+    height: 25px;
+}
+.texto > p{
+    margin: 0px;
+}
+.social img{
+    height: 20px;
+}
+
+@media (max-width: 1023px){
+   .info{
+       flex: 1 1 50%;
+   } 
+}
+
+@media (max-width: 767px){
+    aside, main{
+        flex: 1 1 100%;
+    }
+    section{
+        flex-flow: column;
+    }
+    .info{
+       flex: 1 1 100%; 
+    }
+}
